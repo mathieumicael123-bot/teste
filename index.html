@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Architecture & Living</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #fff;
+            padding: 30px 50px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+            transition: opacity 0.3px;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        .logo {
+            margin: 0 20px;
+        }
+
+        .logo svg {
+            width: 24px;
+            height: 24px;
+            fill: #ffffff;
+        }
+
+        /* Hero Content */
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 60px;
+        }
+
+        .hero-title {
+            font-size: 56px;
+            font-weight: 400;
+            line-height: 1.15;
+            max-width: 500px;
+            letter-spacing: -1px;
+        }
+
+        .hero-right {
+            max-width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .hero-description {
+            font-size: 13px;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #ffffff;
+            color: #111;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Secondary Navigation Bar */
+        .sub-nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            display: flex;
+            justify-content: space-around;
+            padding: 18px 0;
+        }
+
+        .sub-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        .sub-nav-item .number {
+            color: #999;
+            font-weight: 400;
+        }
+
+        /* Section Below */
+        .section-padding {
+            padding: 60px 80px;
+        }
+
+        .philosophy-header {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #777;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .philosophy-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .philosophy-title {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .philosophy-text {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Locations</a></li>
+                <li class="logo">
+                    <a href="#">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="hero-title">More Than a Home,<br>It's a New Chapter.</h1>
+            <div class="hero-right">
+                <p class="hero-description">Exquisite living spaces in the most desirable locations. Designed for a better tomorrow.</p>
+                <a href="#" class="cta-btn">
+                    Explore Properties <span>&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="sub-nav">
+        <div class="sub-nav-item"><span class="number">01</span> OUR PHILOSOPHY</div>
+        <div class="sub-nav-item"><span class="number">02</span> LOCATIONS</div>
+        <div class="sub-nav-item"><span class="number">03</span> CURATED PROPERTIES</div>
+        <div class="sub-nav-item"><span class="number">04</span> THE VELORA STANDARD</div>
+        <div class="sub-nav-item"><span class="number">05</span> THE EXPERIENCE</div>
+    </div>
+
+    <section class="section-padding">
+        <div class="philosophy-header">OUR PHILOSOPHY</div>
+        <div class="philosophy-grid">
+            <div class="philosophy-title">01. ARCHITECTURE</div>
+            <div class="philosophy-text">Thoughtful spaces with timeless character.</div>
+        </div>
+    </section>
+
+</body>
+</html>
